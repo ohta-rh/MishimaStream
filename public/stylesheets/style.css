@@ -1,0 +1,47 @@
+body{
+    font-family: 'リュウミンU-KL', 'リュウミンH-KL', 'マティス-EB','メイリオ'
+                 'RFファイン-ME', 'ＤＨＰ極太明朝体', 'ＤＦＰ極太明朝体', 'AR P明朝体U', 'AR明朝体U',
+                 'HGP平成明朝体W9', 'HGS平成明朝体W9', 'HG平成明朝体W9', 'ＤＨＰ平成明朝体W7','ＤＦ平成明朝体W7', serif;
+    background-color: rgb(0,0,0);
+    color: white;
+}
+canvas{
+  /*background: -moz-linear-gradient(top, rgb(1,179,179), rgb(1,112,173));　/* Firefox用 */  
+  /*background: -webkit-gradient(linear, left top, left bottom, from(rgb(1,179,179)), to(rgb(1,112,173)));*/
+  background: "#fff"
+}
+
+h2{
+    color: white;
+}
+.count{
+  background: black;
+  z-index: 9999;
+  margin-top: 0 auto;
+  position: absolute;
+  font-size: 12px;
+  padding: 10px;
+  font-weight: bold;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+}
+.count .timer{
+  font-size: 30px;
+}
+
+.chatbox {
+}
+
+.chatbox .text-box{
+  margin-left: 20%;
+  text-align:left;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.chatbox .send-btn{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}

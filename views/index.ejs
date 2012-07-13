@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Keywords" content="三島由紀夫, Yukio Mishima" lang="ja">
+  <meta name="description" content="三島由紀夫ファンページ" lang="ja">
+<title>Mishima STream (回転扉的三島由紀夫)</title>
+<% if(process.env.NODE_ENV == "development" || !process.env.NODE_ENV){ %>
+  <script type="text/javascript" src="http://192.168.0.118:3004/socket.io/socket.io.js"></script>
+<%}else{%>
+  <script type="text/javascript" src="http://you-can-not-redo.herokuapp.com/socket.io/socket.io.js"></script>
+<%}%>
+<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/underscore-min.js"></script>
+<script type="text/javascript" src="/javascripts/backbone-min.js"></script>
+<script type="text/javascript" src="/javascripts/easeljs-0.4.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+<!-- We also provide hosted minified versions of all CreateJS libraries.
+http://code.createjs.com -->
+<script>
+  var mishimas = [];
+</script>
+
+<body>
+  <img src="/images/misima5.gif" height="150" style="margin-top:10%;position:fixed;z-index:9999"/>
+  <canvas id="canvas" width="1500px" height="1500px"></canvas>
+</body>
+<script type="text/javascript" src="/javascripts/app/views/index.js"></script>
+<script type="text/javascript" src="/javascripts/app/models/mishima.js"></script>
+</html>
+
