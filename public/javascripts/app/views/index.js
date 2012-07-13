@@ -14,7 +14,6 @@
       ctx.lineCap = 'round';
       ctx.lineWidth = 15;
       ctx.strokeStyle = '#fff';
-      ctx.globalAlpha = 0;
       draw = false;
       this.socket = io.connect("http://192.168.0.118:3004");
       this.socket.on("connect");

@@ -6,9 +6,8 @@ IndexView = Backbone.View.extend({
     ctx = this.el.getContext('2d')
     ctx.lineJoin = 'round'
     ctx.lineCap = 'round'
-    ctx.lineWidth = 15
+    ctx.lineWidth = 10
     ctx.strokeStyle = '#fff'
-    ctx.globalAlpha = 0
     draw = false
     @socket = io.connect("http://192.168.0.118:3004")
     @socket.on("connect");
